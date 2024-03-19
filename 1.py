@@ -3,7 +3,7 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 
-df = pd.read_csv(open('Customers.csv', 'rb'), sep=';')
+df = pd.read_csv(open('Customers.csv', 'rb'), sep=',')
 
 df = pd.get_dummies(df, columns=['Gender', 'Profession'])
 
